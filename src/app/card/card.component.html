@@ -5,10 +5,10 @@
             <p class="date">{{date}}</p>
         </div>
         <div class="row center">
-            <button class="button">Menu</button>
+            <button class="button" (click)="openMenuPopUp()">Menu</button>
+            <app-menu-pop-up *ngIf="showMenu" [menu]="menu1" (close)="hideMenu()"></app-menu-pop-up>
             <button class="button">Invite</button>
         </div>
     </div>
-    
-</div>
+</div> 
 

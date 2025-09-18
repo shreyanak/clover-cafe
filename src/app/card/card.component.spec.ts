@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CardComponent } from './card.component';
+import { MenuPopUpComponent } from '../menu-pop-up/menu-pop-up.component';
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -8,7 +9,7 @@ describe('CardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardComponent]
+      imports: [CardComponent, MenuPopUpComponent]
     })
     .compileComponents();
 
