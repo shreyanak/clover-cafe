@@ -4,6 +4,9 @@
     font-style: normal;
     color: white;
     font-size: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header-bar {
@@ -13,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .body {
@@ -23,4 +27,18 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+.header-image-right {
+    height: 95%; 
+    width: auto; 
+    object-fit: contain;
+    margin-left: auto; 
+}
+
+.header-image-left {
+    height: 95%; 
+    width: auto; 
+    object-fit: contain;
+    margin-right: auto; 
 }
