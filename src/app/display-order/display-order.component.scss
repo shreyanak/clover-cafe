@@ -1,0 +1,35 @@
+.table-container {
+    top: 100%; // Position right at the bottom of card
+    left: 50;
+    margin-top: 35px; // Add space between buttons and table
+    padding: 15px;
+    width: 460px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 4px;
+        overflow: hidden;
+
+        th,
+        td {
+            padding: 10px;
+            padding-right: 5px;
+            text-align: left;
+            border-bottom: 1px solid #88ab79;
+            font-family: "Pacifico", cursive;
+            color: #88ab79;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #88ab79;
+            color: white;
+            font-weight: normal;
+        }
+    }
+}

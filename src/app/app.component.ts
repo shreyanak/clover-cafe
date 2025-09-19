@@ -13,4 +13,9 @@ export class AppComponent {
   date1 = "9/19/25";
   title2 = "Fall";
   date2 = "tbd";
+  menu1 = 'menu1.png';
+  menu2 = 'menu2.png'
+  invite1 = 'invite1.png'
+  drinks1 = ['Lavender Matcha', 'Vanilla Cold Foam Matcha', 'Espresso Mocktini'];
+  eats1 = ['Banana Mini Muffins', 'Blueberry Muffins', 'Blackberry Muffins'];
 }

@@ -1,0 +1,21 @@
+<div class="overlay">
+    <div class="form">
+        <form class="form-container" (ngSubmit)="onSubmit()">
+            <div class="column">
+                <label class="label-text" for="name">Name</label>
+                <input type="text" id="name" name="name" [(ngModel)]="name"/>
+                <label class="label-text" for="drink">Drinks</label>
+                <select name="drink" [(ngModel)]="selectedDrink">
+                    <option></option>
+                    <option *ngFor="let drink of drinks">{{drink}}</option>
+                </select>
+                <label class="label-text" for="eats">Eats</label>
+                <select name="eat" [(ngModel)]="selectedEat">
+                    <option></option>
+                    <option *ngFor="let eat of eats">{{eat}}</option>
+                </select>
+                <button class="button">Submit</button>
+            </div>
+        </form>
+    </div>    
+</div>

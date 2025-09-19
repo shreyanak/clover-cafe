@@ -1,7 +1,7 @@
 <div class="overlay" (click)="onOverlayClick($event)">
     <div class="pop-up" (click)="$event.stopPropagation()">
         <div class="image-container">
-            <img [src]="menu" alt="menu" />
+            <img [src]="invite || menu" alt="menu/invite" />
         </div>
     </div>
 </div>

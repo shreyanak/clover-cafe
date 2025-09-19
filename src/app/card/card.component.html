@@ -4,11 +4,18 @@
             <h1 class="card-title">{{title}}</h1>
             <p class="date">{{date}}</p>
         </div>
-        <div class="row center">
-            <button class="button" (click)="openMenuPopUp()">Menu</button>
-            <app-menu-pop-up *ngIf="showMenu" [menu]="menu1" (close)="hideMenu()"></app-menu-pop-up>
-            <button class="button">Invite</button>
-            <button class="button">Order!</button>
+        <div class="column">
+            <div class="row center">
+                <button class="button" (click)="openMenuPopUp()">Menu</button>
+                <app-menu-pop-up *ngIf="showMenu" [menu]="menu" (close)="hideMenu()"></app-menu-pop-up>
+                <button class="button" (click)="openInvitePopUp()">Invite</button>
+                <script>console.log(invite)</script>
+                <app-menu-pop-up *ngIf="showInvite" [invite]="invite" (close)="hideInvite()"></app-menu-pop-up>
+                <button class="button" (click)="openOrderForm()">Order!</button>
+                <app-order-form *ngIf="showForm" [drinks]="drinks" [eats]="eats"
+                    (close)="handleFormSubmit($event)"></app-order-form>
+            </div>
+            <app-display-order *ngIf="orders.length > 0" [orderData]="orders"></app-display-order>
         </div>
     </div>
 </div> 

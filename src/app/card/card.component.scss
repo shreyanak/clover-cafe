@@ -1,13 +1,15 @@
 .card {
+    position: relative;
     background-color: whitesmoke;
     width: 500px;
-    height: 180px;
+    height: 150px;
     display: flex;
     border-radius: 8px;
     box-shadow: 0 2px rgba(0,0,0,0.1);
     margin: 15px;
     border-color: #88ab79;
     border: 3px;
+    flex-direction: column;
 }
 
 .card-title {
@@ -51,6 +53,4 @@
 .center {
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 144px;
 }
