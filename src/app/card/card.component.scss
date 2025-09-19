@@ -1,8 +1,9 @@
 .card {
     position: relative;
     background-color: whitesmoke;
-    width: 500px;
-    height: 150px;
+    min-width: 500px;
+    min-height: 150px;
+    height: auto;
     display: flex;
     border-radius: 8px;
     box-shadow: 0 2px rgba(0,0,0,0.1);
